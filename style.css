@@ -1,0 +1,235 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Funzioni macrostruttura */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-item {
+    display: flex;
+}
+
+
+/* Section */
+
+.s-topbar {
+
+}
+
+
+.s-taskbar {
+
+}
+
+.s-sidebar {
+
+}
+
+.s-main {
+
+}
+
+
+
+/* Container Pincipali */
+
+
+.c-topbar {
+
+}
+
+.c-taskbar {
+
+}
+
+.c-sidebar {
+
+}
+
+.c-menu {
+
+}
+
+
+.c-card {
+
+}
+
+
+/* Container Figli */
+
+.c-taskbar-song {
+
+}
+
+
+.c-taskbar-player {
+
+}
+
+
+.c-taskbar-option {
+
+}
+
+
+
+/* elementi */
+
+.logo {
+    width: 100%;
+}
+
+
+.button-cta {
+    width: 100%;
+}
+
+
+.ul-sidebar {
+    width: 100%;
+}
+
+.li-sidebar {
+    width: 100%;
+}
+
+.song-cover {
+    width: 100%;
+}
+
+.icon-l {
+
+}
+
+.icon-m {
+
+}
+
+.icon-s {
+
+}
+
+
+
+
+/* Colori */
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-black-t {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.bg-darkgrey {
+    background-color: darkgray;
+}
+
+.bg-greymain {
+    background-color: grey;
+}
+
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: grey;
+}
+
+
+/* allineamento */
+
+.j-start {
+    justify-content: start;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.a-start {
+    align-items: flex-start;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.a-end {
+    align-items: flex-end;
+}
+
+
+.t-start {
+    text-align: start;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-end {
+    text-align: end;
+}
+
+
+/* font size */
+
+h1 {
+    font-size: large;
+}
+
+h2 {
+    font-size: medium;
+}
+
+h3 {
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

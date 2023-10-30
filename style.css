@@ -12,6 +12,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
+
 /* Funzioni macrostruttura */
 
 .flex-row {
@@ -31,11 +35,17 @@ body {
 }
 
 
+
+
+
+
+
+
 /* Section */
 
 .s-topbar {
     width: 100vw;
-    height: 50px;
+    height: 80px;
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -46,12 +56,13 @@ body {
 
 .s-taskbar {
     width: 100vw;
-    height: 50px;
+    height: 80px;
     position: fixed;
     bottom: 0;
     right: 0;
     overflow: hidden;
     z-index: 999;
+    justify-content: space-between;
 
 }
 
@@ -74,28 +85,58 @@ main {
 
 }
 
+
+
+
+
+
+
+
 /* Container Pincipali */
 
 
 .c-topbar {
     width: 100vw;
 
-    padding: 10px;
+padding: 10px 10px 10px 10px;
  justify-content:end;
+ align-items: center;
 
     
 
 }
 
-.c-taskbar {
+.c-taskbar-song {
 
-width: 100vw;
+width: calc(100% / 3);
 z-index: 999;
-
-
-
+padding: 5px 0px 5px 0px;
 
 }
+
+
+.c-taskbar-player {
+
+    width: calc(100% / 3);
+    z-index: 999;
+    padding: 5px 0px 5px 0px;
+    justify-content: center;
+    
+    }
+
+
+.c-taskbar-option {
+
+    width: calc(100% / 3);
+z-index: 999;
+padding: 5px 0px 5px 0px;
+justify-content: flex-end;
+
+}
+
+
+    
+
 
 .c-sidebar {
     width: 150px;
@@ -106,29 +147,34 @@ z-index: 999;
 }
 
 .c-menu {
-    margin-top: 100px;
+    margin-top: 40px;
     width: 100%;
-    max-height: 100%;
-    margin-bottom: 20px;
-    align-items: center;
+
+    margin-bottom: 10px;
+
 }
 
 
 .c-card {
-width: 100%;
-height: 100%;
+max-width: 1400px;
+
 margin-bottom: 20px;
+align-items: flex-start;
+
 }
 
 
-.c-card-less {
-
-width: calc(100% /3);
-height: 100%;
-margin-bottom: 20px;
-
+.c-card-small {
+    max-width: calc(100% / 6);
     
-}
+    margin-bottom: 20px;
+    align-items: flex-start;
+    
+    }
+
+
+
+
 
 
 
@@ -140,34 +186,123 @@ margin-bottom: 20px;
 }
 
 
+
+
+
+
+
+
+
+
 /* Container Figli */
 
 .c-taskbar-song {
+    display: flex;
+    width: calc(100%/3);
+}
 
+
+
+.c-taskbar-img {
+    display: flex;
+    width: 35px;
+    justify-content: center;
+    margin: 0px 15px 0px 5px;
+}
+
+.c-taskbar-titolo {
+    display: flex;
+    width: 80px;
+    line-height: 13px;
+    justify-content: center;
+}
+
+
+.c-taskbar-like {
+    display: flex;
+    width: 50px;
+    align-items: center;
+}
+
+.margin-right {
+
+    margin-right: 10px;
+}
+
+.c-taskbar-like {
+    color: grey;
+}
+
+.c-taskbar-player-option {
+    
+    color: white;
+    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    
+    
 }
 
 
 .c-taskbar-player {
+ 
+
+   width: calc(100%/3);
+   align-items: center;
+   justify-content: space-around;
+   
 
 }
 
+.c-taskbar-progress {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .c-taskbar-option {
+    width: calc(100%/3);
+  
+    height: 100%;
 
+    
 }
+
+.taskbar-icon-option {
+   
+
+    width: 250px;
+justify-content: space-around;
+align-items: center;
+
+    
+}
+
+
+
+
 
 
 
 /* elementi */
 
 .logo {
-    width: 100%;
+    width: 70%;
 }
 
 
 .button-cta {
-    width: 20%;
-    height: 100%;
+    width: 250px;
+    height: 50px;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.119);
+   color: white;
+   border-radius: 30px;
+   font-weight: bold;
+   text-transform: uppercase;
+   border: 1px solid white;
 }
 
 
@@ -184,29 +319,74 @@ margin-bottom: 20px;
 
 
 .ul-menu {
-    width: 50%;
+    width: 100%;
+    margin-top: 35px;
+    justify-content: center;
+
 }
 
 .li-menu {
-    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
     color: #5F6268;
+    font-size: 13px;
+text-transform: uppercase;
+font-weight: bold;
+position: relative;
 }
+
+.border-green {
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: greenyellow;
+    width: 100px;
+    
+
+}
+
+
 
 .song-cover {
     width: 100%;
 }
 
-.icon-l {
 
-}
 
 .icon-m {
+    display: flex;
+    width: 30px;
+    height: 100%;
+    font-size: 30px;
 
 }
+
+.icon-m:hover {
+    transform: scale(1.1);
+
+
+}
+
+
+
+
 
 .icon-s {
+    display: flex;
+   width: 15px;
+   font-size: 15px;
+   margin: 0px 5px 0px 5px;
 
 }
+
+
+.i-card {
+    display: flex;
+    max-width: 200px;
+padding: 10px;
+  
+}
+
 
 
 
@@ -214,14 +394,78 @@ margin-bottom: 20px;
     display: flex;
     width: 100%;
     height: 100%;
-    margin-right: 30px;
+
 
 }
 
 
 .img-circle {
     border-radius: 50%;
+    margin-bottom: 20px;
 }
+
+.img-play {
+    display: flex;
+    width: 40px;
+    height: 40px;
+} 
+
+
+
+
+
+.bar-full {
+    display: flex;
+    width: 20%;
+    height: 30%;
+    background-color: white;
+    border-radius: 10%;
+    margin-left: 20px;
+    border-style: none;
+  
+}
+
+
+
+.bar-empty {
+    display: flex;
+        width: 70%;
+        height: 30%;
+        background-color: gray;
+        border-radius: 10%;
+        margin-right: 20px;
+        border-style: none;
+   
+}
+
+
+
+.bar-small {
+ width: 20%;
+ height: 5%;
+
+}
+
+
+.bar-big {
+   width: 50%;
+
+   height: 5%;
+}
+
+.rotate {
+    transform: rotateY(3.142rad);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Colori */
@@ -250,6 +494,12 @@ margin-bottom: 20px;
 .grey {
     color: #5F6268;
 }
+
+
+
+
+
+
 
 
 /* allineamento */
@@ -292,6 +542,12 @@ margin-bottom: 20px;
 }
 
 
+
+
+
+
+
+
 /* font size */
 
 h1 {
@@ -303,8 +559,18 @@ h2 {
 }
 
 h3 {
-    font-size: small;
+    font-size: 13px;
 }
+
+.song-player {
+    font-size: 10px;
+}
+
+
+
+
+
+
 
 
 
@@ -315,88 +581,35 @@ h3 {
 
 
 
-    .s-topbar {
-        max-width:992px;
-    } 
-
-
-    .s-taskbar {
-        max-width:992px;
-
-    }
-
-
+  
 
     .c-card {
-        width: 100%;
-        max-height: 100%;
-        margin-bottom: 50px;
+        max-width: 992px;
         flex-wrap: wrap;
-        align-items: flex-start;
 
-    }
+        }
 
 
-    .s-main {
-        max-width:992px;
-       height: 100%;
-        padding: 20px;
-    }
-    
+
     main {
         display: flex;
         flex-direction: row;
-        max-height: 100%;
-        max-width:992px;
+        max-width: 992px;
     
     }
 
 
-
-    .c-topbar {
-        max-width:992px;
-        height: 100px;
-        padding: 10px;
-     justify-content:end;
     
-    }
-
-
-    .c-menu {
-        margin-top: 100px;
-        max-width: 100%;
-        align-items: center;
-        max-height: 200px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-    }
-
-
-    .ul-menu {
-        max-width: 922px;
-
-    }
-
 
     
-    .li-menu {
-        max-width: 922px;
-        color: #5F6268;
-        margin-right: 20px;
-    }
+
+
+.img-song:hover {
+    border: 1px solid red;
+}
 
 
 
-
-    .img-song {
-        display: flex;
-        width: 120px;
-        height: 120px;
-        margin-right: 10px;
-
-        
-       
-    }
     
 
 

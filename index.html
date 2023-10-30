@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/da8d61be68.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Spotify</title>
 </head>
 <body>
 
 <section class="s-topbar flex-row">
+    
     <div class="c-topbar flex-row bg-black-t">
      
         <button class="flex-item button-cta">effettua l'upgrade</button>
@@ -22,13 +25,21 @@
 <main class="bg-greymain">
 
 <section class="s-sidebar flex-column">
+
     <div class="c-sidebar flex-column bg-black">
+
         <img class="logo" src="./img/logo.svg" alt="img">
+
             <ul class=" flex-column ul-sidebar">
                 <li class="flex-item li-sidebar">Home</li>
                 <li class="flex-item li-sidebar">Home</li>
                 <li class="flex-item li-sidebar">Home</li>
             </ul>
+
+            
+
+
+
     </div>
 </section>
 
@@ -36,27 +47,54 @@
 <section class="s-main flex-column bg-greymain">
     <div class="c-menu flex-column">
         <ul class=" flex-row ul-menu">
-            <li class="flex-item li-menu">Home</li>
-            <li class="flex-item li-menu">Home</li>
-            <li class="flex-item li-menu">Home</li>
-            <li class="flex-item li-menu">Home</li>
-            <li class="flex-item li-menu">Home</li>
-            <li class="flex-item li-menu">Home</li>
+            <li class="flex-item li-menu">in evidenza</li>
+            <li class="flex-item li-menu">podcast</li>
+            <li class="flex-item li-menu">classifiche</li>
+            <li class="flex-item li-menu">generi e mood</li>
+            <li class="flex-item li-menu">nuove uscite</li>
+            <li class="flex-item li-menu">scopri</li>
         </ul>
+
+
+
+
+
+
+
     </div>
+
+
+
 
     <div class="c-title-song">
         <h1 class="flex-item white">Titolo</h1>
     </div>
 
     <div class="flex-row c-card">
-       
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
+            <div class="i-card">
+              <img class="img-song" src="./img/metal_lifting.jpg" alt="img">
+            </div>
+
+            <div class="i-card">
+                <img class="img-song" src="./img/stranger.jpeg" alt="img">
+            </div>
+
+            <div class="i-card">
+                <img class="img-song" src="./img/aquietplace.jpeg" alt="img">
+            </div>
+            
+            <div class="i-card">
+                <img class="img-song" src="./img/split.jpeg" alt="img">
+            </div>
+
+            <div class="i-card">
+                <img class="img-song" src="./img/cure.jpeg" alt="img">
+            </div>
+
+            <div class="i-card">
+                <img class="img-song" src="./img/sinister.jpeg" alt="img">
+            </div>
+
     </div>
 
     <div class="c-title-song">
@@ -65,9 +103,14 @@
 
 
 
-    <div class="flex-row c-card-less">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song" src="./img/einaudi.jpeg" alt="img">
+    <div class="flex-row c-card">
+        <div class="i-card">
+            <img class="img-song" src="./img/radar.jpeg" alt="img">
+        </div>
+
+        <div class="i-card">
+            <img class="img-song" src="./img/mixdaily.jpeg" alt="img">
+        </div>
     </div>
 
     <div class="c-title-song">
@@ -75,14 +118,21 @@
     </div>
 
 
+    <div class="flex-row c-card">
+        <div class="i-card">
+            <img class="img-song img-circle" src="./img/youg.jpeg" alt="img">
+        </div>
 
-    <div class="flex-row c-card-less">
-        <img class="img-song img-circle" src="./img/einaudi.jpeg" alt="img">
-        <img class="img-song img-circle" src="./img/einaudi.jpeg" alt="img">
-    </div>
+        <div class="i-card">
+            <img class="img-song img-circle" src="./img/einaudi.jpeg" alt="img">
+        </div>
 
 
 
+
+
+
+     </div>
 
 
 
@@ -92,30 +142,72 @@
 </main>
 
 <section class="s-taskbar flex-row bg-darkgrey">
-    <div class="c-taskbar flex-row">
-            <img src="./img/aquietplace.jpeg" alt="">
-            <h3>Sinister</h3>
-            <span>Brano Nome</span>
-            <i>X</i>
-            <i>X</i>
+
+    <div class="c-taskbar-song flex-row">
+
+            <div class="flex-column c-taskbar-img">
+                <img class="img-play" src="./img/aquietplace.jpeg" alt="img">
+            </div>
+
+            <div class="flex-column c-taskbar-titolo">
+                <h3 class="flex-item white">Sinister</h3>
+                <span class="flex-item song-player grey">Brano Nome</span>
+            </div>
+
+            <div class="flex-row c-taskbar-like">
+                <i class="far fa-heart margin-right"></i>
+                <i class="far fa-folder"></i>
+            </div>
+
     </div>
 
-    <div class="c-taskbar flex-row">
-        <img src="./img/aquietplace.jpeg" alt="">
-        <h3>Sinister</h3>
-        <span>Brano Nome</span>
-        <i>X</i>
-        <i>X</i>
+
+
+
+
+
+
+    <div class="c-taskbar-player flex-column">
+
+        <div class="flex-row c-taskbar-player-option">
+            <i class=" fas fa-random icon-s"></i>
+            <i class=" fas fa-step-backward icon-s"></i>
+            <i class="far fa-play-circle icon-m"></i>
+            <i class=" fas fa-step-forward icon-s"></i>
+            <i class="fas fa-undo icon-s rotate"></i>
+
+        </div>
+
+
+        <div class="flex-row c-taskbar-progress">
+            
+                <span class="flex-item white song-player ">0:25</span>
+
+             
+                        <hr class="bar-full">
+                        <hr class="bar-empty">
+              
+
+                <span class="flex-item white song-player ">4:35</span>
+        </div>
     </div>
 
 
-    <div class="c-taskbar flex-row">
-        <img src="./img/aquietplace.jpeg" alt="">
-        <h3>Sinister</h3>
-        <span>Brano Nome</span>
-        <i>X</i>
-        <i>X</i>
+    <div class="c-taskbar-option flex-row">
+        <div class=" flex-row taskbar-icon-option">
+
+            <i class="fa-solid fa-list-ul icon-s white"></i>
+            <i class="icon-s fas fa-desktop white"></i>
+            <i class="icon-s fas fa-volume-up white"></i>
+
+
+            <hr class="bar-full bar-small">
+            <hr class="bar-empty bar-big">
+
+        </div>
+
     </div>
+
 
 
 </section>

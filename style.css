@@ -151,6 +151,8 @@ justify-content: flex-end;
     width: 100%;
 
     margin-bottom: 10px;
+    position: relative;
+    padding: 5px;
 
 }
 
@@ -366,6 +368,7 @@ align-items: center;
     width: 25px;
     margin-right: 5px;
     margin-bottom:5px;
+
 }
 
 .logo {
@@ -412,6 +415,11 @@ align-items: center;
 
 }
 
+
+.li-sidebar:hover {
+    color: white;
+}
+
 .ul-border {
     display: flex;
     color: greenyellow;
@@ -431,6 +439,19 @@ align-items: center;
 
 }
 
+.border-evidenza {
+    position: absolute;
+    bottom: 0px;
+
+
+    left:300px;
+    background-color: greenyellow;
+    z-index: 999;
+    width: 40px;
+    height: 3px;
+}
+
+
 .li-menu {
     margin-right: 10px;
     margin-left: 10px;
@@ -441,7 +462,9 @@ font-weight: bold;
 position: relative;
 }
 
-
+.li-menu:hover {
+    color: white;
+}
 
 
 
@@ -481,8 +504,10 @@ position: relative;
 .i-card {
     display: flex;
     max-width: 200px;
-padding: 10px;
-  
+    padding: 10px;
+    position: relative;
+align-items: center;
+  line-height: 2px;
 }
 
 
@@ -496,6 +521,17 @@ padding: 10px;
 
 }
 
+
+.img-song:hover {
+   filter: grayscale(0.4);
+
+
+}
+
+.icon-play {
+    position: absolute;
+
+}
 
 .img-circle {
     border-radius: 50%;
@@ -524,6 +560,11 @@ padding: 10px;
 }
 
 
+.bar-full:hover {
+    background-color: greenyellow;
+}
+
+
 
 .bar-empty {
     display: flex;
@@ -543,6 +584,8 @@ padding: 10px;
  height: 5%;
 
 }
+
+
 
 
 .bar-big {
@@ -657,15 +700,23 @@ h2 {
 }
 
 h3 {
+    display: flex;
     font-size: 13px;
 }
 
 .song-player {
     font-size: 10px;
 }
+.song-player:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 
 
+.cta-title:hover {
+    color: white;
+}
 
 
 

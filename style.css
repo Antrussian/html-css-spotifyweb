@@ -67,7 +67,7 @@ body {
 }
 
 .s-sidebar {
-    width: 150px;
+    width: 200px;
     max-height: 100%;
 }
 
@@ -139,7 +139,7 @@ justify-content: flex-end;
 
 
 .c-sidebar {
-    width: 150px;
+    width: 200px;
     height: 100%;
     z-index: 2;
 
@@ -188,11 +188,37 @@ align-items: flex-start;
 
 
 
+.c-navbar {
+
+    width: 100%;
+    height: 15%;
+}
 
 
+.c-playlist {
 
+    width: 100%;
+    height: 45%;
+    padding: 20px;
+}
 
+.c-plus {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+}
+
+.i-plus {
+    
+    display: flex;
+    color: black;
+padding: 10px;
+    background-color: grey;
+    margin-right: 10px;
+}
 
 /* Container Figli */
 
@@ -280,15 +306,72 @@ align-items: center;
 }
 
 
+.c-profilo {
 
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+   padding: 0px 20px 90px 20px;
+ 
+}
 
 
 
 
 /* elementi */
 
+
+
+.hr-profilo {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
+
+.download-app {
+width: 100%;
+align-items: center;
+}
+
+.i-download {
+    display: flex;
+    width: 20px;
+   height:  20px;
+   margin-right: 10px;
+}
+
+
+.profilo {
+    width: 100%;
+    height: 30px;
+    align-items: center;
+  
+
+
+}
+
+
+.img-profilo {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #5F6268;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+
+
+}
+
+.icon-side {
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom:5px;
+}
+
 .logo {
-    width: 70%;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -306,16 +389,39 @@ align-items: center;
 }
 
 
+.button-cta:hover {
+    transform: scale(1.05);
+}
+
+
 .ul-sidebar {
     width: 100%;
-    padding: 20px;
+    margin: 0px 0px 30px 20px;
+    height: 30px;
+
+
    
 }
 
 .li-sidebar {
     width: 100%;
     color: #5F6268;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+
 }
+
+.ul-border {
+    display: flex;
+    color: greenyellow;
+    background-color: greenyellow;
+    width: 3px;
+    height: 30px;
+
+}
+
+
 
 
 .ul-menu {
@@ -335,15 +441,7 @@ font-weight: bold;
 position: relative;
 }
 
-.border-green {
-    display: flex;
-    position: absolute;
-    top: 0;
-    color: greenyellow;
-    width: 100px;
-    
 
-}
 
 
 

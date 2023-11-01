@@ -30,8 +30,10 @@
 
 
     <div class="c-sidebar flex-column bg-black">
-
-        <img class="logo" src="./img/logo.svg" alt="img">
+        <div class="c-logo flex-column">
+            <img class="logo-icon" src="./img/logo-small.svg" alt="img">
+            <img class="logo" src="./img/logo.svg" alt="img">
+         </div>
 
         <div class="flex-row c-navbar">
 
@@ -40,9 +42,9 @@
             </div>
 
             <ul class=" flex-column ul-sidebar">
-                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/home.svg" alt="img">Home</li>
-                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/search.svg" alt="img">Cerca</li>
-                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/libreria.svg" alt="img">La tua libreria</li>
+                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/home.svg" alt="img"> <span class="li-text">Home</span></li>
+                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/search.svg" alt="img"> <span class="li-text">Cerca</span></li>
+                <li class="flex-item li-sidebar"><img class="flex-item icon-side" src="./img/libreria.svg" alt="img"><span class="li-text">La tua libreria</span></li>
             </ul>
         </div>
 
@@ -55,7 +57,7 @@
         <div class="flex-column c-playlist">
 
 
-                <h2 class="flex-item white">PLAYLIST</h2>
+                <h2 class="flex-item c-plus white">PLAYLIST</h2>
 
                     <div class="flex-row c-plus">
 
@@ -67,7 +69,7 @@
 
 
 
-                <ul class=" flex-column ul-sidebar">
+                <ul class=" flex-column ul-sidebar-playlist">
 
                 <li class="flex-item li-sidebar"> Nome Playlist</li>
                 <li class="flex-item li-sidebar"> Nome Playlist</li>
@@ -99,7 +101,7 @@
 
             <div class="flex-row profilo">
                     <img class="img-profilo" src="./img/profile.svg" alt="img">
-                    <h3 class="flex-item white"> Jogn Doe</h3>
+                    <h3 class="flex-item cta-title white"> Jogn Doe</h3>
             </div>
             
         </div>
@@ -116,9 +118,11 @@
 
 
 <section class="s-main flex-column bg-greymain">
+
     <div class="c-menu flex-column">
+
         <ul class=" flex-row ul-menu">
-            <li class="flex-item li-menu">in evidenza</li>
+            <li class="flex-item li-menu"> <span class="border-evidenza"></span>in evidenza</li>
             <li class="flex-item li-menu">podcast</li>
             <li class="flex-item li-menu">classifiche</li>
             <li class="flex-item li-menu">generi e mood</li>
@@ -126,7 +130,9 @@
             <li class="flex-item li-menu">scopri</li>
         </ul>
 
-        <span class="border-evidenza"></span>
+ 
+
+   
 
 
 
@@ -169,10 +175,10 @@
                  </div>
                  
                  <div class="i-card white">
-                   <h3>Heavy Metal</h3>
+                   <h3>Stranger Things, Vol. 1 ( Netflix Original Series Soundtrack</h3>
                  </div>
                  <div class="i-card">
-                    <span class="song-player grey" > Subtitle</span>
+                    <span class="song-player grey" > Kyle Dixon & Michael Stain</span>
                   </div>
 
             </div>
@@ -185,7 +191,7 @@
                  </div>
                  
                  <div class="i-card white">
-                   <h3>Heavy Metal</h3>
+                   <h3>A qulet place</h3>
                  </div>
                  <div class="i-card">
                     <span class="song-player grey" > Subtitle</span>
@@ -202,7 +208,7 @@
                  </div>
                  
                  <div class="i-card white">
-                   <h3>Heavy Metal</h3>
+                   <h3>Split</h3>
                  </div>
                  <div class="i-card">
                     <span class="song-player grey" > Subtitle</span>
@@ -220,7 +226,7 @@
                  </div>
                  
                  <div class="i-card white">
-                   <h3>Heavy Metal</h3>
+                   <h3>A cure for wellness</h3>
                  </div>
                  <div class="i-card">
                     <span class="song-player grey" > Subtitle</span>
@@ -238,7 +244,7 @@
                  </div>
                  
                  <div class="i-card white">
-                   <h3>Heavy Metal</h3>
+                   <h3>Sinister</h3>
                  </div>
                  <div class="i-card">
                     <span class="song-player grey" > Subtitle</span>
@@ -254,20 +260,57 @@
         <h1 class="flex-item white">Creato per John Doe</h1>
     </div>
 
+    <div class="flex-column c-subtitle-song">
+        <span class="song-player flex-item grey">Più ascolti, più accurati saranno i suggerimenti</span>
+    </div>
+
 
 
     <div class="flex-row c-card">
-        <div class="i-card">
-            <img class="img-song" src="./img/radar.jpeg" alt="img">
+
+
+
+        <div class="i-card flex-column">
+
+            <div class="i-card">
+                <img class="img-song" src="./img/radar.jpeg" alt="img">
+                <i class="play far fa-play-circle"></i>
+
+             </div>
+             
+             <div class="i-card white">
+               <h3>Release Radar</h3>
+             </div>
+      
+
         </div>
 
-        <div class="i-card">
-            <img class="img-song" src="./img/mixdaily.jpeg" alt="img">
+
+
+        <div class="i-card flex-column">
+
+            <div class="i-card">
+                <img class="img-song" src="./img/mixdaily.jpeg" alt="img">
+                <i class="play far fa-play-circle"></i>
+
+             </div>
+             
+             <div class="i-card white">
+               <h3>Daily Mix 1</h3>
+             </div>
+      
+
         </div>
+
+
     </div>
 
     <div class="c-title-song">
         <h1 class="flex-item white">Artisti più popolari</h1>
+    </div>
+
+    <div class="flex-column c-subtitle-song">
+        <span class="song-player flex-item grey">Più ascolti, più accurati saranno i suggerimenti</span>
     </div>
 
 
@@ -336,9 +379,16 @@
             
                 <span class="flex-item white song-player ">0:25</span>
 
-             
-                        <hr class="bar-full">
-                        <hr class="bar-empty">
+             <div class="flex-row bar-full">
+                <i class=" point fas fa-circle"></i>
+             </div>
+
+         
+
+             <div class="flex-row bar-empty">
+
+             </div>
+    
               
 
                 <span class="flex-item white song-player ">4:35</span>
@@ -354,8 +404,16 @@
             <i class="icon-s fas fa-volume-up white"></i>
 
 
-            <hr class="bar-full bar-small">
-            <hr class="bar-empty bar-big">
+
+            <div class="flex-row bar-full size-bar-full">
+                <i class=" point-volume fas fa-circle"></i>
+             </div>
+
+         
+
+             <div class="flex-row bar-empty size-bar-empty">
+
+             </div>
 
         </div>
 
